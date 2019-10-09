@@ -9,8 +9,47 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    /// State variable, indicating if user is editing the todo list
+    @State var isEditing: Bool = false
+    @State var newTaskTitle: String = ""
+    @State var newTaskBody: String = ""
+    @State var todos: [Todo] = defaultTodoItems
+
+    /// ContentView is out "main" view
     var body: some View {
-        Text("Hello World")
+        List {
+            VStack {
+                TextField(
+                    "So, what's next...✏️",
+                    text: $newTaskTitle,
+                    onEditingChanged: { changed in print("changed title: \(changed)")},
+                    onCommit: { print("commit title") }
+                )
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+
+                TextField(
+                    "Give your task more detail...",
+                    text: $newTaskBody,
+                    onEditingChanged: { changed in print("changed body: \(changed)") },
+                    onCommit: { print("commit body") }
+                )
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+
+                Button("Create new", action: { self.createNewTodo() })
+                    .foregroundColor(.blue)
+            }
+
+            ForEach(self.todos) { todo in
+                TodoItem(todo: todo)
+            }
+        }
+    }
+
+    /// Callback function defining what will be done when user commits typing
+    func createNewTodo() {
+        let todo = Todo(title: newTaskTitle, body: newTaskBody, completed: false)
+        self.todos.append(todo)
     }
 }
 

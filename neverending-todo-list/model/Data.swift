@@ -6,9 +6,7 @@
 //  Copyright © 2019 awave. All rights reserved.
 //
 
-import Foundation
-
-var todoItems: [Todo] = [
+var defaultTodoItems: [Todo] = [
     Todo(title: "Finish Presentation", body: "really need to do this asap", completed: false),
     Todo(title: "Finish CPSC 575 A3", body: nil, completed: true)
 ]

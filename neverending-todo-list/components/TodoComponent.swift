@@ -24,7 +24,7 @@ struct TodoItem: View {
                     .bold()
 
                 /// Don't add the text if it's `nil`
-                if todo.body != nil {
+                if todo.body != nil && !todo.body!.isEmpty {
                     Text(todo.body!)
                         .font(.subheadline)
                 }
@@ -47,7 +47,7 @@ struct TodoItem_Previews: PreviewProvider {
     static var previews: some View {
         /// To make it more dynamic, let's iterate through `todoItems` and add
         /// all of the existing `Todo` items
-        List(todoItems) { todo in
+        List(defaultTodoItems) { todo in
             TodoItem(todo: todo)
         }
     }
