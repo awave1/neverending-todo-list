@@ -8,7 +8,7 @@
 
 > Simple todo list app, built with SwiftUI for CPSC 575 presentation
 
-## Author
+## Authors
 
 👤 **Artem Golovin**
 
