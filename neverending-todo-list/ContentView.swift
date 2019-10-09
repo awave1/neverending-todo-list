@@ -21,9 +21,6 @@ struct ContentView: View {
         NavigationView {
             List {
                 VStack {
-                    /// So we added two `TextField`s to enter task title and body
-                    /// But this could probably be moved out of here and reused
-                    /// So, let's create a `CreateTodoItem` component
                     TextField(
                         "So, what's next...✏️",
                         text: $newTaskTitle,
@@ -45,7 +42,10 @@ struct ContentView: View {
                 }
 
                 ForEach(self.todos) { todo in
-                    TodoItem(todo: todo)
+                    /// So now that we have navigation, let's add todo item detail view
+                    NavigationLink(destination: TodoDetailView(todo: todo)) {
+                        TodoItem(todo: todo)
+                    }
                 }
             }.navigationBarTitle(Text("todo 💯"))
         }

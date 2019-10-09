@@ -27,6 +27,7 @@ struct TodoItem: View {
                 if todo.body != nil && !todo.body!.isEmpty {
                     Text(todo.body!)
                         .font(.subheadline)
+                    .lineLimit(2)
                 }
             }
 

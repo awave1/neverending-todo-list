@@ -10,6 +10,7 @@
 		081190B7234D7C3E009F365C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B6234D7C3E009F365C /* Data.swift */; };
 		081190BA234D7CAF009F365C /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B9234D7CAF009F365C /* TodoItem.swift */; };
 		081190BC234D7F6E009F365C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190BB234D7F6E009F365C /* Todo.swift */; };
+		081190C2234D94D1009F365C /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190C1234D94D1009F365C /* TodoDetailView.swift */; };
 		08FD184D234D43A6007D5774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD184C234D43A6007D5774 /* AppDelegate.swift */; };
 		08FD184F234D43A6007D5774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD184E234D43A6007D5774 /* SceneDelegate.swift */; };
 		08FD1852234D43A6007D5774 /* neverending_todo_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08FD1850234D43A6007D5774 /* neverending_todo_list.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 		081190B6234D7C3E009F365C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		081190B9234D7CAF009F365C /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		081190BB234D7F6E009F365C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		081190C1234D94D1009F365C /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 		08FD1849234D43A6007D5774 /* neverending-todo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "neverending-todo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FD184C234D43A6007D5774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FD184E234D43A6007D5774 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				08FD185D234D43AA007D5774 /* Info.plist */,
 				08FD1850234D43A6007D5774 /* neverending_todo_list.xcdatamodeld */,
 				08FD1857234D43AA007D5774 /* Preview Content */,
+				081190C1234D94D1009F365C /* TodoDetailView.swift */,
 			);
 			path = "neverending-todo-list";
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				081190BC234D7F6E009F365C /* Todo.swift in Sources */,
 				081190B7234D7C3E009F365C /* Data.swift in Sources */,
 				08FD1852234D43A6007D5774 /* neverending_todo_list.xcdatamodeld in Sources */,
+				081190C2234D94D1009F365C /* TodoDetailView.swift in Sources */,
 				08FD184D234D43A6007D5774 /* AppDelegate.swift in Sources */,
 				08FD1854234D43A6007D5774 /* ContentView.swift in Sources */,
 				08FD184F234D43A6007D5774 /* SceneDelegate.swift in Sources */,
