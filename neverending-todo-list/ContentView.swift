@@ -58,6 +58,9 @@ struct ContentView: View {
         if !self.newTaskTitle.isEmpty {
             let todo = Todo(title: newTaskTitle, body: newTaskBody, completed: false)
             self.todoStore.todoItems.append(todo)
+
+            newTaskTitle = ""
+            newTaskBody = ""
         }
     }
 }
