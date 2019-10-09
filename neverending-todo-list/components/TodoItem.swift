@@ -33,12 +33,8 @@ struct TodoItem: View {
 
             /// make sure that checkboxes are at the end
             Spacer()
-
-            if todo.completed {
-                Text("✅")
-            } else {
-                Image(systemName: "square")
-            }
+            
+            Text(todo.completed ? "✅" :  "⬜️")
         }
     }
 }
