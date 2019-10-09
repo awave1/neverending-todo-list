@@ -16,6 +16,8 @@ struct ContentView: View {
     @State var newTaskBody: String = ""
     @State var todos: [Todo] = defaultTodoItems
 
+    @ObservedObject var todoStore = TodoStore()
+
     /// ContentView is out "main" view
     var body: some View {
         NavigationView {
@@ -41,9 +43,9 @@ struct ContentView: View {
                         .foregroundColor(.blue)
                 }
 
-                ForEach(self.todos) { todo in
+                ForEach(todoStore.todoItems) { todo in
                     /// So now that we have navigation, let's add todo item detail view
-                    NavigationLink(destination: TodoDetailView(todo: todo)) {
+                    NavigationLink(destination: TodoDetailView(todo: todo, todoStore: self.todoStore)) {
                         TodoItem(todo: todo)
                     }
                 }
@@ -55,7 +57,7 @@ struct ContentView: View {
     func createNewTodo() {
         if !self.newTaskTitle.isEmpty {
             let todo = Todo(title: newTaskTitle, body: newTaskBody, completed: false)
-            self.todos.append(todo)
+            self.todoStore.todoItems.append(todo)
         }
     }
 }

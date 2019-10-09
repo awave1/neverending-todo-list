@@ -6,7 +6,14 @@
 //  Copyright © 2019 awave. All rights reserved.
 //
 
+import SwiftUI
+import Combine
+
 var defaultTodoItems: [Todo] = [
     Todo(title: "Finish Presentation", body: "really need to do this asap", completed: false),
     Todo(title: "Finish CPSC 575 A3", body: nil, completed: true)
 ]
+
+class TodoStore: ObservableObject {
+    @Published var todoItems = defaultTodoItems
+}

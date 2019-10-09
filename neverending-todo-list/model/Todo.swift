@@ -13,7 +13,7 @@ struct Todo: Codable, Identifiable, Equatable, Hashable {
     let id: UUID
     let title: String
     let body: String?
-    let completed: Bool
+    var completed: Bool
 
     init(title: String, body: String?, completed: Bool) {
         self.id = UUID()
