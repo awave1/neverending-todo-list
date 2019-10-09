@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		081190B7234D7C3E009F365C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B6234D7C3E009F365C /* Data.swift */; };
+		081190B7234D7C3E009F365C /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B6234D7C3E009F365C /* TodoStore.swift */; };
 		081190BA234D7CAF009F365C /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B9234D7CAF009F365C /* TodoItem.swift */; };
 		081190BC234D7F6E009F365C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190BB234D7F6E009F365C /* Todo.swift */; };
 		081190C2234D94D1009F365C /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190C1234D94D1009F365C /* TodoDetailView.swift */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081190B6234D7C3E009F365C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		081190B6234D7C3E009F365C /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
 		081190B9234D7CAF009F365C /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		081190BB234D7F6E009F365C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		081190C1234D94D1009F365C /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		08FD187F234D4D74007D5774 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				081190B6234D7C3E009F365C /* Data.swift */,
+				081190B6234D7C3E009F365C /* TodoStore.swift */,
 				081190BB234D7F6E009F365C /* Todo.swift */,
 			);
 			path = model;
@@ -299,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				081190BC234D7F6E009F365C /* Todo.swift in Sources */,
-				081190B7234D7C3E009F365C /* Data.swift in Sources */,
+				081190B7234D7C3E009F365C /* TodoStore.swift in Sources */,
 				08FD1852234D43A6007D5774 /* neverending_todo_list.xcdatamodeld in Sources */,
 				081190C2234D94D1009F365C /* TodoDetailView.swift in Sources */,
 				08FD184D234D43A6007D5774 /* AppDelegate.swift in Sources */,
