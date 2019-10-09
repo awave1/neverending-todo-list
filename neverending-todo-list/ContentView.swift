@@ -49,7 +49,9 @@ struct ContentView: View {
                         TodoItem(todo: todo)
                     }
                 }
-            }.navigationBarTitle(Text("todo 💯"))
+                .onDelete(perform: deleteTodo)
+            }
+            .navigationBarTitle(Text("todo 💯"))
         }
     }
 
@@ -62,6 +64,10 @@ struct ContentView: View {
             newTaskTitle = ""
             newTaskBody = ""
         }
+    }
+
+    func deleteTodo(at offsets: IndexSet) {
+        todoStore.todoItems.remove(atOffsets: offsets)
     }
 }
 
