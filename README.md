@@ -8,16 +8,17 @@
 
 > Simple todo list app, built with SwiftUI for CPSC 575 presentation
 
+![App](./app.png)
+
 ## Authors
 
 👤 **Artem Golovin**
 
-* Github: [@awave1](https://github.com/awave1)
+- Github: [@awave1](https://github.com/awave1)
 
 👤 **Cristhian Sotelo**
 
 👤 **Joey Ngo**
-
 
 ## Show your support
 
