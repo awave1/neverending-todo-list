@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		081190B7234D7C3E009F365C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B6234D7C3E009F365C /* Data.swift */; };
-		081190BA234D7CAF009F365C /* TodoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B9234D7CAF009F365C /* TodoComponent.swift */; };
+		081190BA234D7CAF009F365C /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190B9234D7CAF009F365C /* TodoItem.swift */; };
 		081190BC234D7F6E009F365C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081190BB234D7F6E009F365C /* Todo.swift */; };
 		08FD184D234D43A6007D5774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD184C234D43A6007D5774 /* AppDelegate.swift */; };
 		08FD184F234D43A6007D5774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FD184E234D43A6007D5774 /* SceneDelegate.swift */; };
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		081190B6234D7C3E009F365C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		081190B9234D7CAF009F365C /* TodoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoComponent.swift; sourceTree = "<group>"; };
+		081190B9234D7CAF009F365C /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		081190BB234D7F6E009F365C /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		08FD1849234D43A6007D5774 /* neverending-todo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "neverending-todo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FD184C234D43A6007D5774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		081190B8234D7C8E009F365C /* components */ = {
 			isa = PBXGroup;
 			children = (
-				081190B9234D7CAF009F365C /* TodoComponent.swift */,
+				081190B9234D7CAF009F365C /* TodoItem.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 				08FD184D234D43A6007D5774 /* AppDelegate.swift in Sources */,
 				08FD1854234D43A6007D5774 /* ContentView.swift in Sources */,
 				08FD184F234D43A6007D5774 /* SceneDelegate.swift in Sources */,
-				081190BA234D7CAF009F365C /* TodoComponent.swift in Sources */,
+				081190BA234D7CAF009F365C /* TodoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

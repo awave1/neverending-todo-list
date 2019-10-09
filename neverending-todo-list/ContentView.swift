@@ -20,6 +20,9 @@ struct ContentView: View {
     var body: some View {
         List {
             VStack {
+                /// So we added two `TextField`s to enter task title and body
+                /// But this could probably be moved out of here and reused
+                /// So, let's create a `CreateTodoItem` component
                 TextField(
                     "So, what's next...✏️",
                     text: $newTaskTitle,
@@ -48,8 +51,10 @@ struct ContentView: View {
 
     /// Callback function defining what will be done when user commits typing
     func createNewTodo() {
-        let todo = Todo(title: newTaskTitle, body: newTaskBody, completed: false)
-        self.todos.append(todo)
+        if !self.newTaskTitle.isEmpty {
+            let todo = Todo(title: newTaskTitle, body: newTaskBody, completed: false)
+            self.todos.append(todo)
+        }
     }
 }
 
