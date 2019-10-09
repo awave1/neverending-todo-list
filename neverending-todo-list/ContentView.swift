@@ -18,34 +18,36 @@ struct ContentView: View {
 
     /// ContentView is out "main" view
     var body: some View {
-        List {
-            VStack {
-                /// So we added two `TextField`s to enter task title and body
-                /// But this could probably be moved out of here and reused
-                /// So, let's create a `CreateTodoItem` component
-                TextField(
-                    "So, what's next...✏️",
-                    text: $newTaskTitle,
-                    onEditingChanged: { changed in print("changed title: \(changed)")},
-                    onCommit: { print("commit title") }
-                )
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+        NavigationView {
+            List {
+                VStack {
+                    /// So we added two `TextField`s to enter task title and body
+                    /// But this could probably be moved out of here and reused
+                    /// So, let's create a `CreateTodoItem` component
+                    TextField(
+                        "So, what's next...✏️",
+                        text: $newTaskTitle,
+                        onEditingChanged: { changed in print("changed title: \(changed)")},
+                        onCommit: { print("commit title") }
+                    )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
 
-                TextField(
-                    "Give your task more detail...",
-                    text: $newTaskBody,
-                    onEditingChanged: { changed in print("changed body: \(changed)") },
-                    onCommit: { print("commit body") }
-                )
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField(
+                        "Give your task more detail...",
+                        text: $newTaskBody,
+                        onEditingChanged: { changed in print("changed body: \(changed)") },
+                        onCommit: { print("commit body") }
+                    )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
 
-                Button("Create new", action: { self.createNewTodo() })
-                    .foregroundColor(.blue)
-            }
+                    Button("Create new", action: { self.createNewTodo() })
+                        .foregroundColor(.blue)
+                }
 
-            ForEach(self.todos) { todo in
-                TodoItem(todo: todo)
-            }
+                ForEach(self.todos) { todo in
+                    TodoItem(todo: todo)
+                }
+            }.navigationBarTitle(Text("todo 💯"))
         }
     }
 
